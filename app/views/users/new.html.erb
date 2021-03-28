@@ -1,0 +1,11 @@
+<h1>Would you like to Sign Up?</h1>
+
+<%= form_with model: @user, local: true do |f| %>
+  <%= f.label :username %><br>
+  <%= f.text_field :username, autofocus: true %><br>
+
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br>
+
+  <%= f.submit "Sign Up" %>
+<% end %>
